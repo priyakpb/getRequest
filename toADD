@@ -1,0 +1,14 @@
+switch(args[2]) {
+  case 'help':
+    usage()
+    break
+  case 'new':
+    break
+  case 'get':
+    break
+  case 'complete':
+    break
+  default:
+    errorLog('invalid command passed')
+    usage()
+}
