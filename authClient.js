@@ -15,7 +15,7 @@ module.exports = ( { oktaOrgUrl, clientId, scopes, serverPort } ) => {
   if ( !oktaOrgUrl || !clientId || !scopes || !serverPort ) {
     throw new Error( "Okta organization URL, client ID, scopes, and server port are required." );
   }
-  // code verifier must be a random string with a minimum of 43 characters
+
   const codeVerifier = uuid() + uuid();
   const redirectUri = `http://localhost:${serverPort}/callback`;
 
