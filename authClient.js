@@ -14,7 +14,9 @@ axios({
   const UserName = res.data.contents.user[0].UserName
   const Name = res.data.contents.user[0].Name
   const date = res.data.contents.user[0].date
-  const log = chalk.green(`${quote} - ${author}`) // use chalk to set the color green on successful response
+  const log = chalk.green(`${quote} - ${UserName}`) 
+   const log = chalk.green(`${quote} - ${Name}`) 
+   const log = chalk.green(`${quote} - ${date}`) // use chalk to set the color green on successful response
   console.log(log)
 }).catch(err => {
   const log = chalk.red(err) // set the color red here for errors.
