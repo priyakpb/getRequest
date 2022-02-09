@@ -1,11 +1,10 @@
 #!/usr/bin/env node
-"use strict";
+
 
 const chalk = require( "chalk" );
 const dotenv = require( "dotenv" );
 const authClient = require( "../src/authClient" );
 
-// read in settings
 dotenv.config();
 
 const config = {
