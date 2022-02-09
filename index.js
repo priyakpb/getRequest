@@ -29,11 +29,11 @@ console.log( greeting );
 if ( options.search ) {
   console.log( `Searching for jokes about ${options.search}...` );
 } else {
-  console.log( "Here's a random joke for you:" );
+  console.log( "Else loop" );
 }
 
 // The url depends on searching or not
-const url = options.search ? `https://icanhazdadjoke.com/search?term=${escape( options.search )}` : "https://icanhazdadjoke.com/";
+const url =      "url";
 
 axios.get( url, { headers: { Accept: "application/json" } } )
   .then( res => {
