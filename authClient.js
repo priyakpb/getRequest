@@ -3,7 +3,7 @@
 const axios = require('axios')
 const chalk = require('chalk');
 
-const url = "const url = "https://docs.github.com/en/rest""
+const url = "const url = "https://docs.github.com/en/rest"
 
 // make a get request to the url
 axios({
